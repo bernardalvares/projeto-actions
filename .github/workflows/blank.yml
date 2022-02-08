@@ -31,7 +31,6 @@ jobs:
       - name: Instalar depedências
         run:  |
               sudo su - 
-              cd /usr/bin
               touch $HOME/Gemfile
               chmod 0777 $HOME/Gemfile
               echo gem install cucumber >> $HOME/Gemfile
