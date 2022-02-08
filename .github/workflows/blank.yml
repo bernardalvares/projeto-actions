@@ -35,10 +35,12 @@ jobs:
               touch $HOME/Gemfile
               chmod 0777 $HOME/Gemfile
               echo gem install cucumber >> $HOME/Gemfile
+              echo gem install capybara >> $HOME/Gemfile
               bundle install              
       - name: Verificar versão do Ruby e a Gem instalada
         run: |
-            ruby -V
+             bundle info cucumber
+             bundle info capybara
             
           
 
