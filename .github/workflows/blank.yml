@@ -38,10 +38,7 @@ jobs:
               gem install bundle
               gem install cucumber
                             
-      - name: Verifica a instalação da biblioteca
-        run: |
-             bundle info cucumber
- 
+
              
             
           
