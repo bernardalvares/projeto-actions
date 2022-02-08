@@ -30,20 +30,17 @@ jobs:
           ruby-version: 2.6
       - name: Instalar depedências
         run:  |
-              sudo su -
-              gem install bundle
-              bundle install
+              sudo su - 
               bundle init
               touch $HOME/Gemfile
               chmod 0777 $HOME/Gemfile
               echo gem install cucumber >> $HOME/Gemfile
-              echo gem install capybara >> $HOME/Gemfile
+              gem install bundle
                             
-      - name: Instalação das bibliotecas
+      - name: Verifica a instalação da biblioteca
         run: |
-             gem install bundle
-      - name: Verifica a bundle instalada
-        run:  bundle info cucumber 
+             bundle info cucumber
+ 
              
             
           
