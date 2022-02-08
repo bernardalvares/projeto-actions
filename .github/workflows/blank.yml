@@ -31,6 +31,7 @@ jobs:
       - name: Instalar depedências
         run:  |
               sudo su -
+              gem install bundle
               bundle install
               bundle init
               touch $HOME/Gemfile
