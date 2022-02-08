@@ -40,7 +40,6 @@ jobs:
               bundle install              
       - name: Verificar versão do Ruby e a Gem instalada
         run: |
-             bundle info cucumber
              bundle info capybara
             
           
