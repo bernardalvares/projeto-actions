@@ -29,7 +29,10 @@ jobs:
         with:
           ruby-version: 2.6
       - name: Instalar depedências
-        run: bundle install
+        run: 
+              cd /usr/bin
+              touch Gemfile
+              bundle install              
       - name: Run teste
         run: bundle exec rake
 
