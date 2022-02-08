@@ -36,6 +36,5 @@ jobs:
               chmod 0777 $HOME/Gemfile
               echo gem install cucumber >> $HOME/Gemfile
               bundle install              
-      - name: Run teste
-        run: bundle exec rake
+
 
