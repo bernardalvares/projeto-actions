@@ -31,7 +31,7 @@ jobs:
       - name: Instalar depedências
         run:  |
               cd /usr/bin
-              touch Gemfile
+              sudo touch Gemfile
               bundle install              
       - name: Run teste
         run: bundle exec rake
