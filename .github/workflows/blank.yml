@@ -36,5 +36,9 @@ jobs:
               chmod 0777 $HOME/Gemfile
               echo gem install cucumber >> $HOME/Gemfile
               bundle install              
-
+      - name: Verificar versão do Ruby e a Gem instalada
+        run: |
+            ruby -V
+            
+          
 
