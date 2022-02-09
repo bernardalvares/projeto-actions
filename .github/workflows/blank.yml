@@ -40,7 +40,7 @@ jobs:
       - name: Instalar o Capybara
         run: gem install capybara
       - name: Listando 
-        run: ls -ltr 
+        run: cat Gemfile 
       
                             
 
