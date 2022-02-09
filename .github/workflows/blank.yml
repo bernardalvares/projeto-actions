@@ -60,7 +60,7 @@ jobs:
         uses: GuillaumeFalourd/clone-github-repo-action@v1
         with:
           owner: 'GuillaumeFalourd'
-          repository: 'Hortifruti-Natural-da-Terra/Automation-test-hnt.git'
+          repository: 'Hortifruti-Natural-da-Terra/Automation-test-hnt'
           access-token: ${{ secrets.ACCESS_TOKEN }}
                             
 
