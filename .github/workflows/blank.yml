@@ -61,7 +61,7 @@ jobs:
         with:
           owner: 'GuillaumeFalourd'
           repository: 'Hortifruti-Natural-da-Terra/Automation-test-hnt.git'
-          access-token: ${{ secrets.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 }}
+          access-token: ${{ secrets.ACCESS_TOKEN }}
                             
 
              
