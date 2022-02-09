@@ -32,14 +32,11 @@ jobs:
         run:  |
               sudo su - 
               bundle init
-              touch $HOME/Gemfile
-              chmod 0777 $HOME/Gemfile
-              echo gem install cucumber >> $HOME/Gemfile
               gem install bundle
               gem install cucumber
       - name: Instalar o Capybara
         run: gem install capybara
-      - name: Listando 
+      - name: Abrindo a Gemfile
         run: cat Gemfile 
       
                             
