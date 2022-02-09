@@ -40,6 +40,8 @@ jobs:
               gem install cucumber
       - name: Instalar o Capybara
         run: gem install capybara
+      - name: Abrir o Gemfile
+        run: cat Gemfile
 
       
                             
