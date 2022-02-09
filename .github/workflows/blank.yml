@@ -30,13 +30,12 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
         with:
-          ruby-version: 2.6
+          ruby-version: 2.6.4
           bundler-cache: true
       - name: Instalar depedências
         run:  |
               sudo su - 
-              bundle init
-              gem install cucumber
+              gem install bundler             
       - name: Instalar o Capybara
         run: gem install capybara
       - name: Abrir o Gemfile
@@ -55,6 +54,7 @@ jobs:
           echo "gem 'rspec', '3.9.0'" >> Gemfile
           echo "gem 'selenium-webdriver', '3.142.7'" >> Gemfile
           echo "gem 'activesupport', '~> 5.0'" >> Gemfile
+          bundler install
           cat Gemfile
       - name: Verifica se o Ruby está instalado
         run: ruby -v
