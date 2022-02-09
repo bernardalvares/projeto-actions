@@ -56,7 +56,12 @@ jobs:
           bundle install
       - name: Verifica se o Ruby está instalado
         run: ruby -v
-      
+      - name: Clone GuillaumeFalourd/formulas-training PRIVATE repository
+        uses: GuillaumeFalourd/clone-github-repo-action@v1
+        with:
+          owner: 'GuillaumeFalourd'
+          repository: 'Hortifruti-Natural-da-Terra/Automation-test-hnt.git'
+          access-token: ${{ secrets.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 }}
                             
 
              
