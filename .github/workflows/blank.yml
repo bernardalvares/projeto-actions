@@ -37,6 +37,8 @@ jobs:
               echo gem install cucumber >> $HOME/Gemfile
               gem install bundle
               gem install cucumber
+      - name: Instalar o Capybara
+        run: gem install capybara
                             
 
              
