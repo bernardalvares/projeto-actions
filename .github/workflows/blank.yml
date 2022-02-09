@@ -43,7 +43,7 @@ jobs:
       - name: Abrir o Gemfile
         run: |
           echo "gem 'capybara', '~> 3.35', '>= 3.35.3'" >> Gemfile
-          echo "gem 'cucumber', '~> 3.35', '>= 3.35.3' >> Gemfile
+          echo "gem 'cucumber', '~> 3.35', '>= 3.35.3'" >> Gemfile
           cat Gemfile
 
       
