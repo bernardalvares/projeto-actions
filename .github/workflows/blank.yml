@@ -40,8 +40,6 @@ jobs:
       - name: Abrir o Gemfile
         run: |
           gem instal bundler
-          echo "gem 'capybara', '~> 3.35', '>= 3.35.3'" >> Gemfile
-          echo "gem 'cucumber', '~> 7.0'" >> Gemfile
           echo "gem 'faker'" >> Gemfile
           echo "gem 'ffaker'" >> Gemfile
           echo "gem 'ffi'" >> Gemfile
