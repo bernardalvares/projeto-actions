@@ -54,7 +54,7 @@ jobs:
           echo "gem 'rspec', '3.9.0'" >> Gemfile
           echo "gem 'selenium-webdriver', '3.142.7'" >> Gemfile
           echo "gem 'activesupport', '~> 5.0'" >> Gemfile
-          bundler install
+          bundle install
       - name: Verifica se o Ruby está instalado
         run: ruby -v
       
