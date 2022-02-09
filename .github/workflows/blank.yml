@@ -55,8 +55,7 @@ jobs:
           echo "gem 'activesupport', '~> 5.0'" >> Gemfile
           bundle install
       - name: Verifica se o Ruby está instalado
-        run: ruby -v
-      - name: Clona o repositório  
+        run: ruby -v 
       - uses: actions/checkout@v1  
         with:
           repository: Hortifruti-Natural-da-Terra/Automation-test-hnt
