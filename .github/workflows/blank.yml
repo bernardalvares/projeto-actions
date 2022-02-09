@@ -39,6 +39,9 @@ jobs:
               gem install cucumber
       - name: Instalar o Capybara
         run: gem install capybara
+      - name: Listando 
+        run: ls -ltr 
+      
                             
 
              
