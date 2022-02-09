@@ -44,7 +44,11 @@ jobs:
         run: |
           echo "gem 'capybara', '~> 3.35', '>= 3.35.3'" >> Gemfile
           echo "gem 'cucumber', '~> 7.0'" >> Gemfile
-          echo "gem 'faker'" >> Gemfile          
+          echo "gem 'faker'" >> Gemfile
+          echo "gem 'ffaker'" >> Gemfile
+          echo "gem 'ffi'" >> Gemfile
+          echo "gem 'png_quantizator'" >> Gemfile
+          echo "gem 'pry'" >> Gemfile
           cat Gemfile
       - name: Verifica se o Ruby está instalado
         run: ruby -v
