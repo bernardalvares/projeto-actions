@@ -40,6 +40,7 @@ jobs:
       - name: Abrir o Gemfile
         run: |
           gem instal bundler
+          bundle init
           echo "gem 'faker'" >> Gemfile
           echo "gem 'ffaker'" >> Gemfile
           echo "gem 'ffi'" >> Gemfile
@@ -52,7 +53,7 @@ jobs:
           echo "gem 'rspec', '3.9.0'" >> Gemfile
           echo "gem 'selenium-webdriver', '3.142.7'" >> Gemfile
           echo "gem 'activesupport', '~> 5.0'" >> Gemfile
-          bundle install --gemfile=Gemfile
+          bundle install
       - name: Verifica se o Ruby está instalado
         run: ruby -v
       
