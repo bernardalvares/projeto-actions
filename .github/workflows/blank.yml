@@ -41,7 +41,9 @@ jobs:
       - name: Instalar o Capybara
         run: gem install capybara
       - name: Abrir o Gemfile
-        run: cat Gemfile
+        run: |
+          echo "bundle install cucumber" >> Gemfile
+          cat Gemfile
 
       
                             
