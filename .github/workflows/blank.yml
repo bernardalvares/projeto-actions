@@ -34,10 +34,11 @@ jobs:
               bundle init
               gem install bundle
               gem install cucumber
+      - name: Verifica se o Rails está instalado
+        run: rails -v
       - name: Instalar o Capybara
         run: gem install capybara
-      - name: Abrindo a Gemfile
-        run: cat Gemfile 
+
       
                             
 
