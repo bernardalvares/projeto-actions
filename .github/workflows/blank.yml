@@ -58,7 +58,7 @@ jobs:
         run: ruby -v 
       - uses: actions/checkout@v1  
         with:
-          repository: Hortifruti-Natural-da-Terra/Automation-test-hnt.git
+          repository: Hortifruti-Natural-da-Terra/Automation-test-hnt
           token: ${{ secrets.ACCESS_TOKEN }}
 
              
