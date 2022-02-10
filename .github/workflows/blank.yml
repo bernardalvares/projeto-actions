@@ -56,10 +56,6 @@ jobs:
           bundle install
       - name: Verifica se o Ruby está instalado
         run: ruby -v 
-      - uses: actions/checkout@v1  
-        with:
-          repository: Hortifruti-Natural-da-Terra/Automation-test-hnt
-          token: ${{ secrets.ACCESS_TOKEN }}
 
              
             
